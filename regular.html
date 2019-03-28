@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regular</title>
+</head>
+<body>
+  
+  <header>
+  
+  
+  <input type="text" id="goods-search" /> Имя
+  <button id="search-button" type="button">отправить</button>
+  
+  
+</header>
+  
+   <script>
+       
+      const $input = document.getElementById('goods-search');
+       const $button = document.getElementById('search-button');
+       
+      
+       
+       $button.addEventListener('click', function(){
+           let regExp = /\d/;
+           let x = $input.value;
+           if(regExp.test(x)){
+               $input.style.borderColor = 'red';
+           }
+       });
+       
+       
+       
+//       let text = "Let’s imagine. You’re watching TV. It’s a hot evening: ’You feel thirsty’. You see: ’an advert’ for a refreshing drink. You see ’people looking cool’ and relaxed. You notice the name of the refreshing drink because you think it could be useful for you to satisfy your thirst.";
+//       
+//    
+//       let text2 = text.replace(/\B’/g, '"').replace(/’\B/g, '"');
+//       
+//       console.log(text2);
+       
+       
+    </script>
+    
+</body>
+</html>
